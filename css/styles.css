@@ -36,6 +36,8 @@
 --normal-font-style: normal;
 --normal-line-height: normal;
 --normal-latter-space: 1px;
+--light-color: #0A775F;
+--outline-color: var(--light-color);
 }
 
 /* Roboto 700, Roboto 400,Roboto 500 */
@@ -73,22 +75,27 @@ img {
   height: auto;
 }
 
-/* *:focus {
-  outline: 2px dotted purple;
+ *:focus {
+  outline: 2px dotted var(--outline-color);
   outline-offset: 3px;
-} */
+}
 
 .main-content {
   flex-grow: 1;
+}
+
+/* header-hero-wrapper */
+.header-hero-wrapper {
+  background-image: url("../img/header-bagground.jpg");
 }
 
 .site-header {
 }
 
 .container {
-  padding-left: 50px;
-  padding-right: 50px;
-  max-width: 1340px;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1440px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -99,14 +106,27 @@ img {
   justify-content:space-between;
   padding-top: 40px;
   padding-bottom: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .site-logo {
+  display: flex;
   width: 235px;
   height: 24px;
+  object-fit: contain;
 }
+
+.site-logo:hover {
+  opacity: 0.8;
+}
+
+.site-logo:active {
+  opacity: 0.6;
+}
+
 .site-logo-img {
-  object-fit: cover;
+
 }
 .site-header-nav {
 
@@ -117,6 +137,7 @@ img {
   align-items: center;
 }
 .site-header-link {
+  display: block;
   text-decoration: none;
   text-transform: var(--title-transform);
   color: var(--simple-text-color);
@@ -127,6 +148,13 @@ img {
   letter-spacing: var(--normal-latter-space);
 }
 
+.site-header-link:hover {
+  color: var(--light-color);
+}
+
+.site-header-link:active {
+  opacity: 0.6;
+}
 .nav-list:not(:last-child) {
   margin-right: 40px;
 }
@@ -171,4 +199,18 @@ img {
 .hero-link {
 }
 .hero-content-img {
+}
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+  .header-hero-wrapper {
+    background-image: url("../img/header-bagground@2x.jpg");
+  }
 }
