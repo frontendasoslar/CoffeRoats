@@ -112,6 +112,8 @@ img {
 
 .site-logo {
   display: flex;
+  /* Element kichkina ekranda kichrayib ketmaydi */
+  flex-shrink: 0;
   width: 235px;
   height: 24px;
   object-fit: contain;
@@ -146,6 +148,8 @@ img {
   font-style: var(--normal-font-style);
   line-height: var(--normal-line-height);
   letter-spacing: var(--normal-latter-space);
+  /* Elementlar kichkina ekranda keyingi qatorga tushib ketmaydi */
+  white-space: nowrap;
 }
 
 .site-header-link:hover {
