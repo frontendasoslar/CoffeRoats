@@ -173,10 +173,11 @@ img {
 }
 .hero-content {
   padding: 0;
+  padding-top: 116px;
   margin: 0;
   width: 100%;
-  max-width: 464px;
-  padding-left: 100px;
+  max-width: 730px;
+  padding-left: 150px;
   margin-right: 116px;
 }
 .hero-title {
@@ -201,6 +202,25 @@ img {
   margin-bottom: 34px;
 }
 .hero-link {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  text-align: center;
+  letter-spacing: var(--normal-latter-space);
+  color: #fff;
+  background-color: var(--light-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 16px 24px;
+  border-radius: 100px;
+}
+
+.hero-link:hover {
+  opacity: 0.8;
+}
+
+.hero-link:active {
+ opacity: 0.6;
 }
 .hero-content-img {
 }
