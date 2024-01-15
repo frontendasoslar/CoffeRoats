@@ -86,6 +86,7 @@ img {
 
 /* header-hero-wrapper */
 .header-hero-wrapper {
+  background-color: #f3d7b7;
   background-image: url("../img/header-bagground.jpg");
 }
 
@@ -202,6 +203,7 @@ img {
   margin-bottom: 34px;
 }
 .hero-link {
+  display: inline-block;
   font-size: 16px;
   font-weight: 500;
   line-height: 18.75px;
@@ -213,6 +215,9 @@ img {
   text-transform: uppercase;
   padding: 16px 24px;
   border-radius: 100px;
+  border: 0;
+  cursor: pointer;
+  white-space: nowrap;
 }
 
 .hero-link:hover {
@@ -223,7 +228,12 @@ img {
  opacity: 0.6;
 }
 .hero-content-img {
+  width: 710px;
+  height: 696px;
+  object-fit: cover;
 }
+
+
 
 
 @media
