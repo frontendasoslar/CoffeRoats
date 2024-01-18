@@ -2,7 +2,7 @@
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto-Bold.woff2") format("woff2"),
-      url("../fonts/Roboto-Bold.woff") format("woff");
+  url("../fonts/Roboto-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -11,7 +11,7 @@
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto-Regular.woff2") format("woff2"),
-      url("../Roboto-Regular.woff") format("woff");
+  url("../Roboto-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -20,24 +20,25 @@
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto-Medium.woff2") format("woff2"),
-      url("../Roboto-Medium.woff") format("woff");
+  url("../Roboto-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 :root {
---simple-text-color: #333;
---title-font-weight: 700;
---simple-text-weight:400;
---title-transform: uppercase;
---black: #000;
---white: #fff;
---normal-font-style: normal;
---normal-line-height: normal;
---normal-latter-space: 1px;
---light-color: #0A775F;
---outline-color: var(--light-color);
+  --simple-text-color: #333;
+  --title-font-weight: 700;
+  --simple-text-weight:400;
+  --title-transform: uppercase;
+  --black: #000;
+  --white: #fff;
+  --normal-font-style: normal;
+  --normal-line-height: normal;
+  --normal-latter-space: 1px;
+  --light-color: #0A775F;
+  --outline-color: var(--light-color);
+  --font-family: "Roboto", "Arial", sans-serif;
 }
 
 /* Roboto 700, Roboto 400,Roboto 500 */
@@ -75,19 +76,23 @@ img {
   height: auto;
 }
 
- *:focus {
+*:focus {
   outline: 2px dotted var(--outline-color);
   outline-offset: 3px;
 }
 
 .main-content {
   flex-grow: 1;
+  padding: 20px 20px 50px 20px;
 }
 
 /* header-hero-wrapper */
 .header-hero-wrapper {
   background-color: #f3d7b7;
   background-image: url("../img/header-bagground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 .site-header {
@@ -144,6 +149,7 @@ img {
   text-decoration: none;
   text-transform: var(--title-transform);
   color: var(--simple-text-color);
+  font-family: var(--font-family);
   font-weight: var(--title-font-weight);
   font-size: 12px;
   font-style: var(--normal-font-style);
@@ -170,7 +176,7 @@ img {
   margin: 0;
 }
 .hero-container {
- display: flex;
+  display: flex;
 }
 .hero-content {
   padding: 0;
@@ -225,7 +231,7 @@ img {
 }
 
 .hero-link:active {
- opacity: 0.6;
+  opacity: 0.6;
 }
 .hero-content-img {
   width: 710px;
@@ -233,8 +239,97 @@ img {
   object-fit: cover;
 }
 
+/* INDEX COLLECTION */
+.index-collection {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  background-image: url("../img/collection.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
 
+.index-collection-container {
+  padding: 0;
+  margin: 0;
+}
+.index-collection-heading {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  text-transform: uppercase;
+  font-family: var(--font-family);
+  color: var(--black);
+  font-size: 50px;
+  font-style: var(--normal-font-style);
+  line-height: var(--normal-line-height);
+  font-weight: 700;
+}
+.index-collection-list {
+  list-style: none;
 
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+.index-collection-list-item-1 {
+  padding: 0;
+  margin: 0;
+  padding-left: 143px;
+  display: flex;
+  /* padding-left: 143px; */
+}
+.dance-img {
+  width: 450px;
+  height: 375px;
+  padding: 0;
+  margin: 0;
+  margin-right: 117px;
+}
+.index-colection-catalog-info {
+ width: 100%;
+ max-width: 453px;
+ padding: 0;
+ margin: 0;
+ padding-top: 121px;
+}
+.index-collection-catalog-heading {
+}
+.index-collection-catalog-text {
+}
+.index-collection-list-item-2 {
+  padding: 0;
+  margin: 0;
+  padding-left: 300px;
+  display: flex;
+}
+.gran-espereso-img {
+  width: 450px;
+  height: 375px;
+  padding: 0;
+  margin: 0;
+  margin-left: 117px;
+}
+
+.picolo-img {
+  width: 450px;
+  height: 375px;
+  padding: 0;
+  margin: 0;
+  margin-right: 117px;
+}
+
+.planalto-img {
+  width: 450px;
+  height: 375px;
+  padding: 0;
+  margin: 0;
+  margin-left: 117px;
+}
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -247,4 +342,8 @@ only screen and (                min-resolution: 2dppx) {
   .header-hero-wrapper {
     background-image: url("../img/header-bagground@2x.jpg");
   }
+
+  .index-collection {
+    background-image: url("../img/collection@2x.jpg");
+}
 }
