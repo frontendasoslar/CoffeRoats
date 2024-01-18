@@ -298,8 +298,21 @@ img {
  padding-top: 121px;
 }
 .index-collection-catalog-heading {
+  color: var(--simple-text-color);
+  font-family: var(--font-family);
+  font-size: 48px;
+  font-style: var(--normal-font-style);
+  font-weight: 500;
+  line-height: var(--normal-line-height);
+  text-transform: uppercase;
 }
 .index-collection-catalog-text {
+ color: var(--simple-text-color);
+ font-family: var(--font-family);
+ font-size: 22px;
+ font-style: var(--normal-font-style);
+ font-weight: var(--simple-text-weight);
+ line-height: 34px;
 }
 .index-collection-list-item-2 {
   padding: 0;
