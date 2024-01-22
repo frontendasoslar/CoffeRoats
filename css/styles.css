@@ -296,6 +296,7 @@ img {
  padding: 0;
  margin: 0;
  padding-top: 121px;
+ flex-grow: 1;
 }
 .index-collection-catalog-heading {
   color: var(--simple-text-color);
