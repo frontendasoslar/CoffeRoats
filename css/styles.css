@@ -243,7 +243,7 @@ img {
 .index-collection {
   margin: 0;
   padding: 0;
-  margin-top: 20px;
+  background-color: #F8F8F2;
   background-image: url("../img/collection.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -283,13 +283,7 @@ img {
   display: flex;
   /* padding-left: 143px; */
 }
-.dance-img {
-  width: 450px;
-  height: 375px;
-  padding: 0;
-  margin: 0;
-  margin-right: 117px;
-}
+
 .index-colection-catalog-info {
  width: 100%;
  max-width: 453px;
@@ -321,29 +315,46 @@ img {
   padding-left: 300px;
   display: flex;
 }
-.gran-espereso-img {
-  width: 450px;
-  height: 375px;
-  padding: 0;
-  margin: 0;
-  margin-left: 117px;
-}
 
-.picolo-img {
+.dance-img {
   width: 450px;
   height: 375px;
   padding: 0;
   margin: 0;
   margin-right: 117px;
+  flex-shrink: 0;
+  object-fit: cover;
 }
-
-.planalto-img {
+.gran-espereso-img {
+  flex-shrink: 0;
   width: 450px;
   height: 375px;
   padding: 0;
   margin: 0;
   margin-left: 117px;
+  object-fit: cover;
 }
+
+.picolo-img {
+  flex-shrink: 0;
+  width: 450px;
+  height: 375px;
+  padding: 0;
+  margin: 0;
+  margin-right: 117px;
+  object-fit: cover;
+}
+
+.planalto-img {
+  flex-shrink: 0;
+  width: 450px;
+  height: 375px;
+  padding: 0;
+  margin: 0;
+  margin-left: 117px;
+  object-fit: cover;
+}
+
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
