@@ -620,6 +620,108 @@ img {
   opacity: 0.6;
 }
 
+
+/* FOOTER */
+.site-footer {
+  padding: 0;
+  margin: 0;
+  background-color: #C99B67;
+  background-image: url("../img/footer-bakground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.footer {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.footer-site-logo {
+  padding: 0;
+  margin: 0;
+  margin-right: 245px;
+}
+
+.site-footer-lis {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-right: 331px;
+}
+
+.site-footer-link {
+  display: block;
+  text-decoration: none;
+  text-transform: var(--title-transform);
+  color: var(--simple-text-color);
+  font-family: var(--font-family);
+  font-weight: var(--title-font-weight);
+  font-size: 12px;
+  font-style: var(--normal-font-style);
+  line-height: var(--normal-line-height);
+  letter-spacing: var(--normal-latter-space);
+  /* Elementlar kichkina ekranda keyingi qatorga tushib ketmaydi */
+  white-space: nowrap;
+}
+
+.site-footer-link:hover {
+  color: var(--light-color);
+}
+
+.site-header-link:active {
+  opacity: 0.6;
+}
+.footer-nav-list:not(:last-child) {
+  margin-right: 40px;
+}
+.footer-messendger {
+  padding: 0;
+  margin: 0;
+}
+.footer-messendger-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+.footer-messendger-list-item {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-messendger-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+.footermessendger-list-link {
+  padding: 0;
+  margin: 0;
+  object-fit: cover;
+}
+
+.footermessendger-list-link:hover {
+  opacity: 0.8;
+}
+
+.footermessendger-list-link:active {
+  opacity: 0.6;
+}
+.footer-messendger-img {
+  padding: 0;
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
@@ -642,5 +744,9 @@ background-image: url("../img/index-feauture-bakground@2x.jpg");
 
 .how-it-works-inner {
   background-image: url("../img/How-it-works@2x.jpg");
+}
+
+.site-footer {
+  background-image: url("../img/footer-bakground@2x.jpg");
 }
 }
