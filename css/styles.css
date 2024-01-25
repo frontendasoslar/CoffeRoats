@@ -67,7 +67,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.5px;
-  font-family: "Roboto" "Arial", sans-serif;
+  font-family: var(--font-family);
   font-weight: 400;
 }
 
@@ -720,6 +720,114 @@ img {
   width: 30px;
   height: 30px;
   object-fit: cover;
+}
+
+
+/* ABAUT US */
+.abaut-hero-img {
+  width: 710px;
+  height: 596px;
+  object-fit: cover;
+}
+
+/* COMMINITING */
+.abaut-hero-content {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 160px;
+  display: flex;
+  padding: 160px 64px 200px 164px;
+}
+.hero-img {
+  padding: 0;
+  margin: 0;
+  margin-right: 185px;
+  width: 360px;
+  height: 364px;
+  object-fit: cover;
+
+}
+.hero-content-heading {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+.hero-title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 48px;
+  font-weight: var(--title-font-weight);
+  font-style: normal;
+  line-height: normal;
+  color: #000;
+}
+.hero-text {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-weight: var(--simple-text-weight);
+  font-style: normal;
+  line-height: 30px;
+  color: #333;
+}
+
+
+/* QUALITY */
+
+.quality-wrapper {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  padding-left: 143px;
+  padding-right: 30px;
+  /* background-color: #C99B67; */
+  background-image: url("../img/index-feauture-bakground.jpg");
+  /* background-size: 100% 510px; */
+  /* background-position: center center; */
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+.abaut-feauture-heading {
+  padding: 0;
+  margin: 0;
+  margin-right: 63px;
+  padding-top: 100px;
+  padding-bottom: 118px;
+}
+.abaut-feauture-title {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  margin-bottom: 24px;
+  color: #fff;
+  font-family: var(--font-family);
+  font-size: 50px;
+  font-style: var(--normal-font-style);
+  font-weight: var(--title-font-weight);
+  line-height: var(--normal-line-height);
+ text-transform: uppercase;
+}
+.abaut-feauture-text {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  color: #fff;
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-style: var(--normal-font-style);
+  font-weight: var(--simple-text-weight);
+  line-height: 175%;
+}
+.abaut-feauture-img {
+  padding: 0;
+  margin: 0;
+  width: 550px;
+  height: 500px;
+  object-fit: cover;
+  margin-top: -80px;
 }
 
 @media
