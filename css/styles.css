@@ -830,6 +830,89 @@ img {
   margin-top: -80px;
 }
 
+/* HEADQUARTERS */
+.abaut-headquarters-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  margin-left: -20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.abaut-headquarters-list-item {
+  padding: 0;
+  margin: 0;
+  margin-left: 20px;
+  width: 100%;
+  max-width: 433px;
+  display: flex;
+  justify-content:space-between;
+  align-items: first baseline;
+  background-color:#F8F8F2;
+  padding: 45px 55px 40px 20px;
+}
+.abaut-headquarters-info {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.abaut-headquarters-info-title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 231px;
+  color: #333;
+  font-family: var(--font-family);
+  font-size: 40px;
+  font-style: var(--normal-font-style);
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.abaut-headquarters-info-text {
+  padding: 0;
+  margin: 0;
+  color: #333;
+  font-family: var(--font-family);
+  font-size: 17px;
+  font-style: normal;
+  line-height: 155.556%;
+  font-weight: 400;
+}
+
+.united-kiningdom-img {
+  padding: 0;
+  margin: 0;
+  width: 120px;
+  height: 143px;
+  object-fit: cover;
+}
+
+
+.canada-img{
+  padding: 0;
+  margin: 0;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.australia {
+
+}
+.australia-img {
+  padding: 0;
+  margin: 0;
+  width: 120px;
+  height: 107px;
+  object-fit: cover;
+}
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
