@@ -913,6 +913,237 @@ img {
   object-fit: cover;
 }
 
+/* GREAT YOUR PLAN */
+.plan-inner {
+  padding: 0;
+  margin: 0;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.plans {
+  display: flex;
+}
+.great-your-plan {
+  padding: 0;
+  margin: 0;
+  margin-right: 320px;
+}
+.plans {
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  padding: 50px 146px 50px 28px;
+  background-image: url("../img/plan-bcground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.plans-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-right: px;
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+}
+.plans-list-item {
+  padding: 0;
+  margin: 0;
+}
+
+.plans-list-item:not(:last-child) {
+  margin-bottom: 35px;
+}
+.plans-list-link {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-family);
+  text-decoration: none;
+  color: #555;
+  font-size: 28px;
+  font-style: var(--normal-font-style);
+  font-weight: 500;
+  line-height: var(--normal-line-height);
+  text-transform: uppercase;
+}
+
+.plans-list-link:active {
+  color: #000;
+  border-bottom: 3px dashed #C99B67;
+}
+
+.click-plan {
+  padding: 0;
+  margin: 0;
+}
+.click-plan-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.clicg-plan-list-item {
+  padding: 0;
+  margin: 0;
+}
+.accordion {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  color: #000;
+  font-size: 35.5px;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  background-color: #F8F8F2;
+  border: 0;
+  letter-spacing: 0;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.accordion::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/u_angle-down.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-left: 44px;
+}
+
+.panel-plan {
+  padding: 0;
+  margin: 0;
+}
+.plan-panel-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+
+
+.plan-panel-list-item {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 210px;
+  font-family: var(--font-family);
+}
+
+.plan-panel-list-item:not(:last-child) {
+  margin-right: 18px;
+  margin-bottom: 60px;
+}
+.list-item-button {
+  padding: 0;
+  margin: 0;
+  height: 220px;
+  padding: 30px 12px 56px 16px;
+  background-color: rgba(10, 119, 95, 0.2);
+  border: 0;
+  outline-color: #C99B67;
+}
+
+.list-item-button:active {
+  background-color: rgba(10, 119, 95, 1);
+  color: #fff;
+}
+
+
+.list-item-button-title {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-family);
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+
+.list-item-button-text {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-family);
+  color: #333;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: left;
+}
+
+.my-plan-info {
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-end;
+}
+
+.my-plans {
+  padding: 0;
+  margin: 0;
+  background-color: #C99B67;
+  padding: 40px 22px 40px 20px;
+  margin-bottom: 20px;
+}
+.my-plan-title {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 400;
+  margin-bottom: 14px;
+}
+.my-plan-text {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-family: var(--font-family);
+  font-size: 24px;
+  font-style: normal;
+  line-height: 141.7%;
+  font-weight: 500;
+}
+
+.black-text {
+  color: #333;
+}
+
+.my-plan-link {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  text-align: center;
+  letter-spacing: var(--normal-latter-space);
+  color: #fff;
+  background-color: var(--light-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 16px 24px;
+  border-radius: 100px;
+  border: 0;
+  cursor: pointer;
+  white-space: nowrap;
+  margin-left: 480px;
+  outline-color: #C99B67;
+}
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
@@ -939,5 +1170,9 @@ background-image: url("../img/index-feauture-bakground@2x.jpg");
 
 .site-footer {
   background-image: url("../img/footer-bakground@2x.jpg");
+}
+
+.plans {
+  background-image: url("../img/plan-bcground@2x.jpg");
 }
 }
